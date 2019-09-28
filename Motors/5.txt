@@ -1,0 +1,9 @@
+5
+5
+shaft Temp, center Temp,fan Temp,Date and Time
+1 12 312 Fri Sep 27 18:57:33 2019
+5 87 464 Fri Sep 27 19:07:19 2019
+12 32 123 Fri Sep 27 19:08:43 2019
+231 2123 12 Fri Sep 27 19:08:59 2019
+2131 23 12 Fri Sep 27 19:09:10 2019
+34 1002 23 Sat Sep 28 15:36:21 2019

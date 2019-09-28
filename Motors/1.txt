@@ -1,0 +1,5 @@
+1
+12
+shaft Temp, center Temp,fan Temp,Date and Time
+12,12,12,Sun Sep 22 14:59:23 2019
+99,99,99,Sun Sep 22 15:01:20 2019
