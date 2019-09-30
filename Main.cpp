@@ -5,6 +5,7 @@
 #include <ctime>
 
 #include "MotorClass.h"
+#include "Userclass.h"
 
 using namespace std;
 
@@ -13,18 +14,10 @@ int main()
     while (1)
     {
 
-        // LogIn Interface
-        string username;
-        string password;
-
-        // User Authenticating
-        cout << "Enter username : ";
-        cin >> username;
-        cout << "Enter password : ";
-        cin >> password;
-        if (username == "nipuna" && password == "nipuna")
+        User U;
+        if (U.authUser())
         {
-            cout << "logged in\nUser " << username << endl;
+            cout << "logged in\nUser " << endl;
             while (1)
             {
                 //Instruction window
@@ -32,7 +25,8 @@ int main()
                 cout << "1 -> Create a temperature log\n";
                 cout << "2 -> Read the temperature of the last 4 weeks\n";
                 cout << "3 -> Compare the temperature variance in the last 4 weeks\n";
-                cout << "4 -> Exit\n\n";
+                cout << "4 -> Create new user\n";
+                cout << "5 -> Exit\n\n";
 
                 //Get the user instruction number as 'inst'
                 int inst;
@@ -137,6 +131,11 @@ int main()
                     M.analyze_temperature();
                 }
                 else if (inst == 4)
+                {
+                    User X;
+                    X.createUser();
+                }
+                else if (inst == 5)
                 {
                     exit(1);
                 }
