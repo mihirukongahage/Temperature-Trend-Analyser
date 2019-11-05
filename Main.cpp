@@ -28,7 +28,9 @@ int main()
                 cout << "2 -> Read the temperature of the last 4 weeks\n";
                 cout << "3 -> Compare the temperature variance in the last 4 weeks\n";
                 cout << "4 -> Create new user\n";
-                cout << "5 -> Exit\n\n";
+                cout << "5 -> Store a new AC Motor\n";
+                cout << "6 -> Store a new DC Motor\n";
+                cout << "7 -> Exit\n\n";
 
                 //Get the user instruction number as 'inst'
                 int inst;
@@ -138,6 +140,16 @@ int main()
                     X.createUser();
                 }
                 else if (inst == 5)
+                {
+                    ACMotor a;
+                    a.new_create_motor_log();
+                }
+                else if (inst == 6)
+                {
+                    DCMotor a;
+                    a.new_create_motor_log();
+                }
+                else if (inst == 7)
                 {
                     exit(1);
                 }
