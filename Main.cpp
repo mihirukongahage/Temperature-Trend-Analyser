@@ -6,6 +6,8 @@
 
 #include "MotorClass.h"
 #include "Userclass.h"
+#include "ACMotor.h"
+#include "DCMotor.h"
 
 using namespace std;
 
